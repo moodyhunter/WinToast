@@ -6,7 +6,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 option(WINTOAST_BUILD_EXAMPLES "Build Examples" OFF)
 
-add_library(WinToast SHARED
+add_library(WinToast
     src/wintoastlib.cpp
     include/WinToast/WinToast.hpp)
 target_include_directories(WinToast
