@@ -1,4 +1,4 @@
-#include "wintoastlib.h"
+#include "WinToast/WinToast.hpp"
 #include <string>     // std::string, std::stoi
 
 using namespace WinToastLib;

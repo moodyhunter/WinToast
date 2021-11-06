@@ -4,7 +4,8 @@
 #include <qfiledialog.h>
 #include <qmessagebox.h>
 
-#include "../../../src/wintoastlib.h"
+#include "WinToast/WinToast.hpp"
+
 using namespace WinToastLib;
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

@@ -18,7 +18,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "wintoastlib.h"
+#include "WinToast/WinToast.hpp"
 #include <memory>
 #include <assert.h>
 #include <unordered_map>

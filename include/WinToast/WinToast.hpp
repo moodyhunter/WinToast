@@ -38,6 +38,9 @@
 #include <string.h>
 #include <vector>
 #include <map>
+
+#include "WinToast/WinToast_export.h"
+
 using namespace Microsoft::WRL;
 using namespace ABI::Windows::Data::Xml::Dom;
 using namespace ABI::Windows::Foundation;
@@ -47,7 +50,7 @@ using namespace Windows::Foundation;
 
 namespace WinToastLib {
 
-    class IWinToastHandler {
+    class WINTOAST_EXPORT IWinToastHandler {
     public:
         enum WinToastDismissalReason {
             UserCanceled = ToastDismissalReason::ToastDismissalReason_UserCanceled,
@@ -61,7 +64,7 @@ namespace WinToastLib {
         virtual void toastFailed() const = 0;
     };
 
-    class WinToastTemplate {
+    class WINTOAST_EXPORT WinToastTemplate {
     public:
         enum class Scenario { Default, Alarm, IncomingCall, Reminder };
         enum Duration { System, Short, Long };
@@ -152,7 +155,7 @@ namespace WinToastLib {
         Duration                            _duration{Duration::System};
     };
 
-    class WinToast {
+    class WINTOAST_EXPORT WinToast {
     public:
         enum WinToastError {
             NoError = 0,
